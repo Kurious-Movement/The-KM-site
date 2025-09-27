@@ -1,0 +1,51 @@
+:root{
+  --k-teal:#24948e;
+  --k-red:#FF1B1C;
+  --k-grey:#D6D6D6;
+}
+.text-k-teal{color:var(--k-teal)}
+.text-k-red{color:var(--k-red)}
+.bg-k-teal{background:var(--k-teal)}
+.bg-k-red{background:var(--k-red)}
+.bg-k-grey{background:var(--k-grey)}
+
+.card-option{
+  position:relative; overflow:hidden;
+  border-radius:1rem; border:1px solid rgba(255,255,255,.12);
+  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  padding:1px;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.card-option:hover{ transform:translateY(-2px); box-shadow:0 10px 30px rgba(0,0,0,.35); }
+.card-inner{ padding:1.25rem 1.25rem 1.5rem; }
+.card-title{
+  font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans';
+  font-weight:800; font-size:1.25rem; line-height:1.2; margin-bottom:.25rem;
+}
+.card-copy{ color:#D1D5DB; font-size:.9rem;}
+
+.ribbon{ position:absolute; left:-10vw; right:-10vw; height:16vh; z-index:1; opacity:.95; }
+.ribbon-red{ bottom:18vh; background:var(--k-red); clip-path: polygon(0 35%, 100% 0, 100% 50%, 0 80%); }
+.ribbon-grey{ bottom:10vh; background:var(--k-grey); clip-path: polygon(0 30%, 100% 0, 100% 50%, 0 90%); }
+.ribbon-teal{ bottom:0; background:var(--k-teal); clip-path: polygon(0 10%, 100% 0, 100% 60%, 0 100%); }
+
+.slot, .slot-disabled{
+  display:flex; align-items:center; justify-content:center;
+  padding:.9rem 1rem; border-radius:.9rem; text-align:center;
+  font-weight:700; letter-spacing:.02em;
+}
+.slot{ background:var(--k-teal); color:#041414; }
+.slot:hover{ filter:brightness(1.05); }
+.slot-disabled{ background:rgba(255,255,255,.08); color:#c5c5c5; border:1px dashed rgba(255,255,255,.2); }
+
+.cta-learn{
+  display:inline-block; background:var(--k-red); color:white; 
+  padding:1rem 1.25rem; border-radius:1rem; font-weight:800;
+  transition:transform .15s ease, filter .15s ease;
+}
+.cta-learn:hover{ transform:translateY(-2px); filter:brightness(1.05); }
+
+.site-footer{ background:#0b0b0b; border-top:1px solid rgba(255,255,255,.08) }
+.footer-inner{ max-width:72rem; margin:0 auto; padding:2rem 1.5rem; color:#bfbfbf; }
+
+.font-[Montserrat]{font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans';}

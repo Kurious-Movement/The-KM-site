@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kurious Movement — What are you looking for?</title>
+  <meta name="description" content="Kurious Movement — Parkour classes, Group Training, and Chase Tag in Albury–Wodonga. Book a trial and join our community."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-neutral-950 text-white font-[Inter]">
+  <header class="fixed inset-x-0 top-0 z-40 backdrop-blur bg-neutral-950/60 border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="font-[Montserrat] font-extrabold tracking-wide text-white text-xl">KURIOUS <span class="text-k-red">MOVEMENT</span></a>
+      <nav class="hidden sm:flex gap-6 text-sm">
+        <a class="hover:text-k-teal" href="parkour.html">Parkour</a>
+        <a class="hover:text-k-teal" href="training.html">PT / Group</a>
+        <a class="hover:text-k-teal" href="chase-tag.html">Chase Tag</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="relative min-h-screen flex items-center justify-center">
+    <img src="images/hero.jpg" alt="Parkour action" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/65"></div>
+    <div class="ribbon ribbon-red"></div>
+    <div class="ribbon ribbon-grey"></div>
+    <div class="ribbon ribbon-teal"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24">
+      <p class="uppercase tracking-[0.2em] text-xs text-neutral-300">Albury–Wodonga</p>
+      <h1 class="mt-3 font-[Montserrat] font-extrabold text-4xl sm:text-6xl leading-tight">
+        What are you looking for today?
+      </h1>
+      <p class="mt-4 text-neutral-300">Community-led movement: fun, safe, beginner-friendly.</p>
+
+      <div class="mt-10 grid sm:grid-cols-3 gap-4">
+        <a href="parkour.html" class="card-option">
+          <div class="card-inner">
+            <h3 class="card-title">Parkour Classes</h3>
+            <p class="card-copy">8–11 YRS • 12–15 YRS • 16 YRS+ • Advanced</p>
+          </div>
+        </a>
+        <a href="training.html" class="card-option">
+          <div class="card-inner">
+            <h3 class="card-title">PT / Group Training</h3>
+            <p class="card-copy">Functional strength & conditioning</p>
+          </div>
+        </a>
+        <a href="chase-tag.html" class="card-option">
+          <div class="card-inner">
+            <h3 class="card-title">Chase Tag</h3>
+            <p class="card-copy">Fridays 5:30–6:30pm • fast, fun, agile</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="mt-10 text-sm text-neutral-300">
+        <span class="mr-4">WWCC / First-aid certified coaches</span>
+        <span class="mr-4">Beginner friendly</span>
+        <span>Community-driven</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-neutral-950 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-6 py-10 grid sm:grid-cols-3 gap-6 text-sm text-neutral-300">
+      <div>
+        <div class="font-semibold text-white">Contact</div>
+        <p class="mt-2"><a href="mailto:info@kuriousmovement.com" class="hover:text-k-teal">info@kuriousmovement.com</a></p>
+        <p class="mt-1"><a href="https://instagram.com/kuriousmovement" target="_blank" class="hover:text-k-teal">@kuriousmovement</a></p>
+      </div>
+      <div>
+        <div class="font-semibold text-white">Location</div>
+        <p class="mt-2">Albury–Wodonga • <a class="hover:text-k-teal" target="_blank" href="https://maps.google.com">Map</a></p>
+      </div>
+      <div>
+        <div class="font-semibold text-white">Links</div>
+        <p class="mt-2"><a class="hover:text-k-teal" href="parkour.html">Parkour</a> • <a class="hover:text-k-teal" href="training.html">PT/Group</a> • <a class="hover:text-k-teal" href="chase-tag.html">Chase Tag</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
